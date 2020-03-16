@@ -11,7 +11,7 @@
          <h1>{{title}}</h1>
          <hr>
          <input type="text" v-on:input="changeTitle">
-         <p>{{ description }}</p>
+         <p>{{ hello() }} <a v-bind:href="link">adssad</a></p>
          
     </div>
     
@@ -19,12 +19,12 @@
         new Vue({
             el: '#app',
             data: {
-                title: "hasiktir javascript",
-                description: "hehe ",
+                title: "Vue Dersleri",
+                link: "https:/www.kuruyavuz.com",
             },
             methods: {
-                changeTitle: function(event){
-                    this.description = event.target.value;
+                hello: function (){
+                    return this.title;
                 }
             }
         });  
