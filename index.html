@@ -10,8 +10,8 @@
      <div id="app">
          <p v-once>{{title}}</p>
          <hr>
-         <p>{{ hello() }} <a v-bind:href="link">adssad</a></p>
-         
+         <p>{{ hello() }} <a v-bind:href="link">yavuz kuru</a></p>
+         <p v-html="blogLink"></p>
     </div>
     
     <script type="text/javascript">
@@ -20,6 +20,7 @@
             data: {
                 title: "Vue Dersleri",
                 link: "https:/www.kuruyavuz.com",
+                blogLink: "<a href='https://medium.com/@yavuz255/git-ignore-file-cretion-6d3d6910274f'>Link</a>"
             },
             methods: {
                 hello: function (){
